@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('savedQuizData', JSON.stringify(local));
 
         // Kirim ke server PHP (ubah URL sesuai domain hosting IDCloudHost kamu)
-        fetch('http://localhost:8000/save.php', {
+        fetch('http://27.112.78.194/save.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(entry)
