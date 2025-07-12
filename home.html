@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenali Risikomu, Raih Hidup Sehat! - Skrining Diabetes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <style>
+    /* Background default untuk desktop */
+    .full-bg img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Ganti background saat layar kecil (mobile) */
+    @media (max-width: 768px) {
+      .full-bg img {
+        content: url('assets/gambar/homehp.png');
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="full-bg">
+    <img src="assets/gambar/home.png" alt="Background width">
+  </div>
+
+  <header>
+    <h1>Kenali Risikomu, Raih Hidup Sehat!</h1>
+    <p>Tes Skrining Diabetes Tipe 2</p>
+  </header>
+
+  <main id="quiz-container">
+    <section id="intro-screen" class="screen active">
+      <h2>Selamat Datang!</h2>
+      <p>Kuesioner singkat ini akan membantumu memahami risiko diabetes tipe 2. Hasilnya bukan diagnosis medis, namun dapat menjadi langkah awal untuk hidup lebih sehat.</p>
+      <button id="start-quiz-btn" class="btn primary">Mulai Tes Sekarang!</button>
+    </section>
+
+    <section id="quiz-screen" class="screen hidden">
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span id="progress-text">0% Selesai</span>
+      </div>
+      <div id="question-container"></div>
+      <div class="navigation-buttons">
+        <button id="prev-btn" class="btn secondary" style="display: none;">Kembali</button>
+        <button id="next-btn" class="btn primary">Selanjutnya</button>
+        <button id="submit-quiz-btn" class="btn primary" style="display: none;">Lihat Hasil</button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen hidden">
+      <h2>Hasil Skrining Risiko Diabetes Anda</h2>
+      <div class="result-score-container">
+        <span id="final-score"></span> poin
+      </div>
+      <div id="result-message" class="result-message"></div>
+      <div class="recommendations">
+        <h3>Rekomendasi Kami:</h3>
+        <ul id="recommendation-list"></ul>
+      </div>
+      <button id="restart-quiz-btn" class="btn primary">Ulangi Tes</button>
+      <button id="save-data-btn" class="btn secondary">Simpan Data</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>
+      <a href="https://www.instagram.com/sugarmates/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/gambar/insta.png" alt="Instagram" style="width: 28px; height: 28px; vertical-align: middle;">
+      </a>&copy;Sugar Mates
+    </p>
+
+    <div class="footer-links">
+      <a href="pages/about.html">Latar Belakang</a> |
+      <a href="pages/pencegahan.html">Kenapa Ini Penting</a> |
+      <a href="pages/sumber-daya.html">Isi Piring ku</a> |
+      <a href="pages/disclaimer.html">DO n DONTS</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
