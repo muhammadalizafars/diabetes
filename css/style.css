@@ -359,3 +359,54 @@ footer .footer-links a:hover {
     width: 95%;
   }
 }
+
+.do-dont-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.do-box, .dont-box {
+  width: 300px;
+  max-width: 90vw;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.do-box {
+  background-color: rgba(0, 128, 0, 0.7); /* hijau transparan */
+}
+
+.dont-box {
+  background-color: rgba(204, 51, 0, 0.8); /* merah transparan */
+}
+
+.do-box h2, .dont-box h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.do-box ul, .dont-box ul {
+  padding-left: 20px;
+}
+
+.do-box li, .dont-box li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* Responsive - better stacking */
+@media (max-width: 600px) {
+  .do-dont-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

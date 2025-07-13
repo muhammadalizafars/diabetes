@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q4',
-            question: 'Pernahkah Anda didiagnosis hipertensi?',
+            question: 'Pernahkah Anda didiagnosis hipertensi(darah tinggi)?',
             type: 'radio',
             options: [
                 { text: 'Ya', value: 1 },
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
             question: 'Apakah Anda aktif secara fisik?',
             type: 'radio',
             options: [
-                { text: 'Tidak pernah atau jarang', value: 1 },
-                { text: 'Aktif 30 menit, 5 hari/minggu', value: 0 }
+                { text: 'Tidak pernah atau jarang beraktivitas', value: 1 },
+                { text: 'Beraktivitas Aktif 30 menit, 5 hari/minggu', value: 0 }
             ]
         },
         {
