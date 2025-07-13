@@ -59,8 +59,12 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
+.content p {
+  text-align: justify;
+}
+
 
 .quiz-container {
   background-color: rgb(255, 255, 255);
@@ -111,6 +115,7 @@ main {
 .btn.primary {
   background-color: #90dbeb; /* Vibrant orange */
   color: white;
+  margin-bottom: 100px;
 }
 
 .btn.primary:hover {
@@ -121,6 +126,7 @@ main {
 .btn.secondary {
   background-color: #90dbeb;
   color: #fefcfc;
+  margin-bottom: 100px;
 }
 
 .btn.secondary:hover {
@@ -233,6 +239,7 @@ main {
 
 .navigation-buttons {
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 /* Result Screen */
@@ -349,6 +356,7 @@ footer .footer-links a:hover {
   }
   .quiz-container {
     padding: 20px;
+    padding-bottom: 120px;
   }
   .btn {
     padding: 10px 20px;
@@ -410,3 +418,17 @@ footer .footer-links a:hover {
     align-items: center;
   }
 }
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  text-align: justify;
+  padding-bottom: 120px; /* 🔥 Tambahan penting agar konten bawah tidak ketutupan footer */
+}
+
+
